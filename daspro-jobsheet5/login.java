@@ -10,7 +10,10 @@ public class login {
         System.out.println("Masukkan password : ");
         input_password = input.nextLine();
 
-        if (input_username.equals(username) && input_password.equals(password)) {
+        if (input_username.equals(username)) {
+            if (input_password.equals(password)) {
+                System.out.println("Anda berhasil login");
+            }
             System.out.println("Anda berhasil login");
         } else {
             System.out.println("Anda gagal login");
