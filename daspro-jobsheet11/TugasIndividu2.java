@@ -14,7 +14,7 @@ public class TugasIndividu2 {
                 System.out.println();
             }
         } else {
-            System.out.println("N Minimal 4");
+            System.out.println("N Minimal 5");
         }
     }
 }
