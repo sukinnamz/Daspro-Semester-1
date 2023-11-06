@@ -6,7 +6,7 @@ public class TugasIndividu2 {
         System.out.print("Masukkan nilai N = ");
         int N = sc.nextInt();
 
-        if (N >= 4) {
+        if (N >= 6) {
             for (int i = N; i >= 1; i--) {
                 for (int j = 1; j <= i; j++) {
                     System.out.print("*");
