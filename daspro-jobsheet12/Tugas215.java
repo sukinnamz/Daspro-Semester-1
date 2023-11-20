@@ -7,8 +7,11 @@ public class Tugas215 {
 
     public static void main(String[] args) {
         inputnilai();
+        System.out.println("************************************************");
         tampilnilai();
+        System.out.println("************************************************");
         hari();
+        System.out.println("************************************************");
         mahasiswa();
     }
 
