@@ -10,7 +10,7 @@ public class Kubus15 {
     }
 
     public static int volume(int sisi) {
-        int vol = sisi * sisi;
+        int vol = sisi * sisi * sisi;
         return vol;
     }
 
