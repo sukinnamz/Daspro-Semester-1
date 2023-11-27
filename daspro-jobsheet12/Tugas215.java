@@ -40,10 +40,14 @@ public class Tugas215 {
 
     public static void hari() {
         int maxValue = nilaitertinggi(nilai);
+        int minValue = nilaiterendah(nilai);
         for (int i = 0; i < nilai.length; i++) {
             for (int j = 0; j < nilai[0].length; j++) {
                 if (nilai[i][j] == maxValue) {
                     System.out.println("Nilai tertinggi ada pada minggu ke-" + (j + 1));
+                }
+                if (nilai[i][j] == minValue) {
+                    System.out.println("Nilai terendah ada pada minggu ke-" + (j + 1));
                 }
             }
         }
@@ -51,11 +55,16 @@ public class Tugas215 {
 
     public static void mahasiswa() {
         int maxValue = nilaitertinggi(nilai);
+        int minValue = nilaiterendah(nilai);
         for (int i = 0; i < nilai.length; i++) {
             for (int j = 0; j < nilai[0].length; j++) {
                 if (nilai[i][j] == maxValue) {
                     System.out.println(
                             "Mahasiswa dengan nilai tertinggi adalah " + nama[i] + " dengan nilai " + maxValue);
+                }
+                if (nilai[i][j] == minValue) {
+                    System.out.println(
+                            "Mahasiswa dengan nilai terendah adalah " + nama[i] + " dengan nilai " + minValue);
                 }
             }
         }
@@ -72,5 +81,18 @@ public class Tugas215 {
             }
         }
         return maxValue;
+    }
+
+    static int nilaiterendah(int[][] array) {
+        int minValue = array[0][0];
+
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                if (array[i][j] < minValue) {
+                    minValue = array[i][j];
+                }
+            }
+        }
+        return minValue;
     }
 }
